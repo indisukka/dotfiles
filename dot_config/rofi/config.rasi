@@ -1,0 +1,115 @@
+configuration {
+	modi:                   "combi,window";
+	combi-modi:             "drun,run";
+	font:                   "Sewaka Sans Semibold 15";
+	show-icons:             true;
+	disable-history:        false;
+	combi-hide-mode-prefix: true;
+	drun-display-format:    "{name}";
+	max-history-size:       5;
+	terminal:               "kitty";
+	sidebar-mode:			true;
+	matching:				"prefix";
+	drun-match-fields:		"name,keywords";
+}
+
+@import "~/.config/rofi/colors.rasi"
+
+window {
+	background-color: 		@xbg;
+	border-color: 			@xPurple;
+	border:					5;
+	border-radius: 			20;
+}
+
+mainbox {
+	//children: [inputbar,listview,mode-switcher];
+	border:  	0;
+    padding: 	0;
+}
+
+inputbar {
+	children: [ textbox-prompt-colon, entry ];
+
+}
+
+textbox-prompt-colon {
+	text-color: 	@xRed;
+	padding: 		8px 8px 8px 8px;
+	str: 			"";
+
+}
+
+entry {
+	placeholder: 	"Search Applications";
+	padding: 		8px;
+	text-color: 	@xYellow;
+	expand:     	true;
+
+}
+
+listview {
+    fixed-height: 		true;
+    spacing:      		10px ;
+    padding:      		20px; // padding between the listview and mainbox
+    lines:        		10;
+    columns:      		1;
+    border:				0;
+    border-color: 		@xfg;
+    scrollbar:    		false;
+//    scrollbar-width:	0px;
+}
+
+element {
+    padding:			5;
+    border-radius: 		10;
+}
+
+element.normal.normal, 
+element.alternate.normal {
+	background-color: 	@xbg;
+	text-color: 		@xBlue;
+}
+
+element.normal.active{
+	background-color: 	@xOrange;
+	text-color: 		@xbg;
+}
+
+element.selected.normal,
+element.selected.urgent,
+element.selected.active{
+	background-color: 	@xAqua;
+	text-color: 		@xbg;
+	border:				2;
+	border-radius: 		10;
+	border-color:		@xOrange;
+}
+
+scrollbar {
+    width:        10px;
+    border:       3;
+    handle-color: @xGreen;
+    handle-width: 20px ;
+    padding:      0;
+}
+
+mode-switcher {
+//    border:       	2px;
+//    border-color: 	@xGreen;
+//    border-radius: 	10;
+    padding:		7;
+}
+
+button {
+    spacing:    0;
+    text-color: @xfg;
+    margin: 	1;
+    padding:	10px;
+}
+
+button.selected {
+    background-color: 	@xOrange;
+    text-color:       	@xbg;
+    border-radius:		10;
+}

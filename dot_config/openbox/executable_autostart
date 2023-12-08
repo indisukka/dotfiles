@@ -1,0 +1,49 @@
+#########################################################################################
+# Use               : Openbox autostart
+#########################################################################################
+
+## Picom
+picom -b --config ~/.config/picom.conf &
+
+## Set background image
+feh --no-fehbg --bg-fill --randomize ~/Pictures/walls/* &
+
+## Tint2 bar
+tint2 &
+
+## Bluetooth
+#(blueberry-tray) &
+(blueman-applet) &
+
+## GNOME PolicyKit authentication
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
+## Desktop notification
+/usr/lib/xfce4/notifyd/xfce4-notifyd &
+
+## Turn off/on System Beep
+xset b off
+
+## Power Manager
+xfce4-power-manager &
+
+## Clipboard Manager
+(com.github.hluk.copyq) &
+
+## Network Manager Applet
+(nm-applet) &
+
+## Megasync
+(megasync) &
+
+## Pamac Tray
+(sleep 10;pamac-tray) &
+
+## quicknotes
+#(sleep 10;primenote) &
+
+## Notesnook
+#(sleep 60;notesnook --hidden) &
+
+## Volume control for systray
+(sleep 30;volumeicon) &
