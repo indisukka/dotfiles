@@ -274,7 +274,7 @@
     <!-- Terminal -->
     <keybind key="W-Return">
       <action name="Execute">
-        <command>alacritty -e fish</command>
+        <command>kitty -e fish</command>
       </action>
     </keybind>
     <!-- CLI File Manager -->

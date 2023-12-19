@@ -8,6 +8,7 @@
 
 declare -a options=(
 "monitor"
+"laptop"
 "dual"
 "manual"
     )
@@ -19,6 +20,7 @@ choice=$(printf '%s\n' "${options[@]}" | rofi -dmenu -i -p "Chose display output
 case "$choice" in 
     monitor ) xrandr --output eDP-1 --off --output DP-1 --off --output DP-2 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP-3 --off --output DP-4 --off;;
     dual ) xrandr --output eDP-1 --mode 2880x1800 --pos 1920x0 --rotate normal --output DP-1 --off --output DP-2 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP-3 --off --output DP-4 --off;;
+    laptop ) xrandr --output eDP-1 --mode 2880x1800 --pos 0x0 --rotate normal --output DP-1 --off --output DP-2 --off --output DP-3 --off --output DP-4 --off;;
     manual ) arandr;;
 esac 
 
