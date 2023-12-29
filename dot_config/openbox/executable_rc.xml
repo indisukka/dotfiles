@@ -10,7 +10,7 @@
     <focusNew>yes</focusNew>
     <!-- always try to focus new windows when they appear. other rules do
        apply -->
-    <followMouse>no</followMouse>
+    <followMouse>yes</followMouse>
     <!-- move focus to a window when you move the mouse into it -->
     <focusLast>yes</focusLast>
     <!-- focus the last used window when changing desktops, instead of the one
@@ -55,10 +55,10 @@
       D: omnipresent (on all desktops).
   -->
     <keepBorder>yes</keepBorder>
-    <animateIconify>yes</animateIconify>
+    <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
-      <name>Aller</name>
-      <size>11</size>
+      <name>Cascadia Code</name>
+      <size>10</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -66,8 +66,8 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveWindow">
-      <name>Aller</name>
-      <size>12</size>
+      <name>Cascadia Code</name>
+      <size>10</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -75,8 +75,8 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuHeader">
-      <name>Google Sans</name>
-      <size>13</size>
+      <name>Google Sans Display</name>
+      <size>12</size>
       <!-- font size in points -->
       <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
@@ -84,7 +84,7 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuItem">
-      <name>Google Sans Display Medium</name>
+      <name>Source Code Pro Medium</name>
       <size>11</size>
       <!-- font size in points -->
       <weight>Normal</weight>
@@ -218,12 +218,12 @@
     <!-- Brightness shortcuts -->
     <keybind key="XF86MonBrightnessUp">
       <action name="Execute">
-        <command>xbacklight +10</command>
+        <command>brightnessctl s +5%</command>
       </action>
     </keybind>
     <keybind key="XF86MonBrightnessDown">
       <action name="Execute">
-        <command>xbacklight -10</command>
+        <command>brightnessctl s 5%-</command>
       </action>
     </keybind>
     <!-- Window Manager Shortcuts -->
@@ -262,7 +262,7 @@
     <!-- Thorium -->
     <keybind key="W-S-b">
       <action name="Execute">
-        <command>mercury-browser</command>
+        <command>floorp</command>
       </action>
     </keybind>
     <!-- File Manager -->
@@ -280,13 +280,13 @@
     <!-- CLI File Manager -->
     <keybind key="W-S-f">
       <action name="Execute">
-        <command>alacritty -t ranger -e ranger</command>
+        <command>kitty -e ranger</command>
       </action>
     </keybind>
     <!-- GUI Text Editor -->
     <keybind key="W-t">
       <action name="Execute">
-        <command>lite-xl</command>
+        <command>subl</command>
       </action>
     </keybind>
     <!-- rofi prompt -->
@@ -319,6 +319,12 @@
         <command>pavucontrol</command>
       </action>
     </keybind>
+    <!-- Volumeicon Applet -->
+    <keybind key="W-S-v">
+      <action name="Execute">
+        <command>volumeicon</command>
+      </action>
+    </keybind>
     <!-- XKill -->
     <keybind key="W-Escape">
       <action name="Execute">
@@ -328,15 +334,9 @@
     <!-- Calibre -->
     <keybind key="W-c">
       <action name="Execute">
-        <command>calibre</command>
+        <command>com.calibre_ebook.calibre</command>
       </action>
     </keybind>
-    <!-- Mail reader -->
-    <!--     <keybind key="W-m">
-      <action name="Execute">
-        <command>thunderbird</command>
-      </action>
-    </keybind> -->
     <!-- Logout Menu -->
     <keybind key="W-x">
       <action name="Execute">
@@ -346,7 +346,7 @@
     <!-- Deadbeef -->
     <keybind key="W-S-m">
       <action name="Execute">
-        <command>deadbeef</command>
+        <command>org.strawberrymusicplayer.strawberry</command>
       </action>
     </keybind>
     <!-- Spotify -->
