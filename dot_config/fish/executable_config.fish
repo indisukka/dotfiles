@@ -130,8 +130,8 @@ alias lr='eza -TlR -s name --group-directories-first --icons -L 2'
 # alias l='g -l --icon'
 # alias ls='g -A --icon'
 # alias la='g -l -A --icon --header'
-# alias lta='g -l -A --icon --table --table-style=unicode --header'
-# alias lt='g -l --icon --table --table-style=unicode'
+alias lta='g -l -A --icon --table --table-style=unicode --header'
+alias lt='g -l --icon --table --table-style=unicode'
 # alias ltr='g -l -A -T --depth=2'
 
 #****************************************************************************************
