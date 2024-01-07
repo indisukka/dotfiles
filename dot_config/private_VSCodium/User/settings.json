@@ -5,8 +5,8 @@
         "base16-tomorrow-night-dark"
     ],
     "workbench.colorTheme": "Base16 Tomorrow Night Dark",
-    "editor.fontFamily": "'Intel One Mono', 'monospace', monospace",
-    "editor.fontSize": 16,
+    "editor.fontFamily": "'MD IO Trial', 'Cascadia Code', 'monospace', monospace",
+    "editor.fontSize": 18,
     "editor.fontLigatures": true,
     "terminal.integrated.cursorStyle": "underline",
     "terminal.integrated.fontFamily": "'JetBrains Mono', monospace",
@@ -33,5 +33,6 @@
             "icon": "terminal-powershell"
         }
     },
-    "git.autofetch": true
+    "git.autofetch": true,
+    "window.zoomLevel": -1
 }
