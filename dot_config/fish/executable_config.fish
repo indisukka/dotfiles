@@ -155,11 +155,12 @@ abbr install 'sudo pacman -S'
 abbr update 'sudo pacman -Syyu'
 abbr remove 'sudo pacman -Rns'
 abbr uninstall 'sudo pacman -Rs'
+abbr rmorphans 'sudo pacman -Rs $(pacman -Qqtd)'
 
 # git abbreviations
 abbr gi 'git init'
 abbr ga 'git add'
-abbr gc 'git clone'
+abbr gc 'git clone --depth=1'
 abbr gcm 'git commit -m'
 abbr gp 'git push'
 abbr gb 'git branch'
@@ -169,7 +170,7 @@ abbr gchk 'git checkout'
 
 # Chezmoi
 abbr ca 'chezmoi add'
-abbr ce 'chezmoi edit'
+abbr ce 'chezmoi edit ~/.config/'
 abbr ccd 'chezmoi cd'
 abbr cva 'chezmoi -v apply'
 abbr cdif 'chezmoi diff'

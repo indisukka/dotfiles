@@ -1,0 +1,17 @@
+[Unit]
+Description=Lock session before hibernate or sleep or suspend for user %i
+Before=sleep.target
+#Before=suspend.target
+#Before=hibernate.target
+
+[Service]
+#User=gin
+Type=simple
+Environment=DISPLAY=:0
+ExecStart=/usr/bin/gtklock
+ExecStartPost=/usr/bin/sleep 1
+
+[Install]
+WantedBy=sleep.target
+#WantedBy=suspend.target
+#WantedBy=hibernate.target

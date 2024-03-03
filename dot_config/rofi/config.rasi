@@ -1,7 +1,7 @@
 configuration {
 	modi:                   "combi,window";
 	combi-modi:             "drun,run";
-	font:                   "Haskoy Bold 16";
+	font:                   "Haskoy Bold 15";
 	show-icons:             true;
 	disable-history:        false;
 	combi-hide-mode-prefix: true;
@@ -53,7 +53,7 @@ listview {
     spacing:      		10px ;
     padding:      		20px; // padding between the listview and mainbox
     lines:        		10;
-    columns:      		1;
+    columns:      		2;
     border:				0;
     border-color: 		@xfg;
     scrollbar:    		false;

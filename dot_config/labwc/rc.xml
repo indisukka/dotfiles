@@ -1,0 +1,290 @@
+<?xml version="1.0"?>
+<labwc_config>
+  <theme>
+    <name>tomorrow-night-openbox</name>
+    <cornerRadius>10</cornerRadius>
+    <font name="Google Sans Text" size="12"/>
+    <titleLayout>CLIM</titleLayout>
+  </theme>
+  <windowSwitcher show="yes" preview="yes" outlines="yes">
+    <fields>
+      <!-- <field content="type" width="25%" /> -->
+      <field content="identifier" width="25%" />
+      <field content="title" width="75%" />
+    </fields>
+  </windowSwitcher>
+
+  <desktops>
+    <popupTime>1000</popupTime>
+    <names>
+      <name>Workspace 1</name>
+      <name>Workspace 2</name>
+    </names>
+  </desktops>
+  <!-- Set up regions -->
+  <regions>
+    <region name="top-left" x="0%" y="0%" height="30%" width="30%" />
+    <region name="top" x="0%" y="0%" height="50%" width="100%" />
+    <region name="top-right" x="70%" y="0%" height="30%" width="30%" />
+    <region name="left" x="0%" y="0%" height="100%" width="50%" />
+    <region name="center" x="20%" y="20%" height="40%" width="40%" />
+    <region name="right" x="50%" y="0%" height="100%" width="50%" />
+    <region name="bottom" x="0%" y="50%" height="50%" width="100%" />
+    <region name="bottom-left" x="0%" y="70%" height="30%" width="30%" />
+    <region name="bottom-right" x="70%" y="70%" height="30%" width="30%" />
+  </regions>
+  <!-- Keyboard shortcuts -->
+  <keyboard>
+    <!-- Window manager controls -->
+    <keybind key="W-Space">
+      <action name="ShowMenu" menu="root-menu"/>
+    </keybind>
+    <keybind key="A-Space">
+      <action name="ShowMenu" menu="client-menu" />
+    </keybind>
+    <keybind key="W-S-r">
+      <action name="Execute" command="labwc --reconfigure" />
+    </keybind>
+    <keybind key="W-S-x">
+      <action name="Execute" command="labwc --exit" />
+    </keybind>
+    <keybind key="W-q">
+      <action name="Close"/>
+    </keybind>
+    <keybind key="A-Tab">
+      <action name="NextWindow"/>
+    </keybind>
+    <keybind key="A-S-Tab">
+      <action name="PreviousWindow"/>
+    </keybind>
+    <keybind key="A-t">
+      <action name="ToggleAlwaysOnTop"/>
+    </keybind>
+    <keybind key="A-m">
+      <action name="ToggleMaximize"/>
+    </keybind>
+    <!-- <keybind key="A-d">
+      <action name="ToggleShowDesktop"/>
+    </keybind> -->
+    <keybind key="A-b">
+      <action name="ToggleDecorations"/>
+    </keybind>
+    <keybind key="W-Left">
+      <action name="SnapToEdge" direction="left" />
+    </keybind>
+    <keybind key="W-Right">
+      <action name="SnapToEdge" direction="right" />
+    </keybind>
+    <keybind key="W-Up">
+      <action name="SnapToEdge" direction="up" />
+    </keybind>
+    <keybind key="W-Down">
+      <action name="SnapToEdge" direction="down" />
+    </keybind>
+
+    <!-- SnapToRegion via W-Numpad -->
+    <keybind key="W-KP_7">
+      <action name="UnmaximizeFull"/>
+      <action name="SnapToRegion" region="top-left" />
+    </keybind>
+    <keybind key="W-KP_8">
+      <action name="UnmaximizeFull"/>
+      <action name="SnapToRegion" region="top" />
+    </keybind>
+    <keybind key="W-KP_9">
+      <action name="UnmaximizeFull"/>
+      <action name="SnapToRegion" region="top-right" />
+    </keybind>
+    <keybind key="W-KP_4">
+      <action name="UnmaximizeFull"/>
+      <action name="SnapToRegion" region="left" />
+    </keybind>
+    <keybind key="W-KP_5">
+      <action name="UnmaximizeFull"/>
+      <action name="SnapToRegion" region="center" />
+    </keybind>
+    <keybind key="W-KP_6">
+      <action name="UnmaximizeFull"/>
+      <action name="SnapToRegion" region="right" />
+    </keybind>
+    <keybind key="W-KP_1">
+      <action name="UnmaximizeFull"/>
+      <action name="SnapToRegion" region="bottom-left" />
+    </keybind>
+    <keybind key="W-KP_2">
+      <action name="UnmaximizeFull"/>
+      <action name="SnapToRegion" region="bottom" />
+    </keybind>
+    <keybind key="W-KP_3">
+      <action name="UnmaximizeFull"/>
+      <action name="SnapToRegion" region="bottom-right" />
+    </keybind>
+
+    <!-- Workspace -->
+    <keybind key="W-Prior">
+      <action name="GoToDesktop" to="left" />
+    </keybind>
+    <keybind key="W-Next">
+      <action name="GoToDesktop" to="right" />
+    </keybind>
+    <keybind key="W-S-Prior">
+      <action name="SendToDesktop" to="left" />
+    </keybind>
+    <keybind key="W-S-Next">
+      <action name="SendToDesktop" to="right" />
+    </keybind>
+
+    <!-- Fn Keys -->
+    <keybind key="XF86_MonBrightnessUp">
+      <action name="Execute" command="brightnessctl set +5%"/>
+    </keybind>
+    <keybind key="XF86_MonBrightnessDown">
+      <action name="Execute" command="brightnessctl set 5%-"/>
+    </keybind>
+    <keybind key="XF86_AudioLowerVolume">
+      <action name="Execute" command="amixer sset Master 5%-" />
+    </keybind>
+    <keybind key="XF86_AudioRaiseVolume">
+      <action name="Execute" command="amixer sset Master 5%+" />
+    </keybind>
+    <keybind key="XF86_AudioMute">
+      <action name="Execute" command="amixer sset Master toggle" />
+    </keybind>
+    <!-- Media Keys -->
+    <keybind key="XF86AudioPlay">
+      <action name="Execute">
+        <command>playerctl play-pause</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioPrev">
+      <action name="Execute">
+        <command>playerctl previous</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioNext">
+      <action name="Execute">
+        <command>playerctl next</command>
+      </action>
+    </keybind>
+    <!-- Applications -->
+    <keybind key="W-Return">
+      <action name="Execute" command="kitty -e fish"/>
+    </keybind>
+    <keybind key="W-b">
+      <action name="Execute" command="firefox"/>
+    </keybind>
+    <keybind key="W-s">
+      <action name="Execute" command="spotify"/>
+    </keybind>
+    <keybind key="W-d">
+      <action name="Execute" command="discord"/>
+    </keybind>
+    <keybind key="W-f">
+      <action name="Execute" command="pcmanfm"/>
+    </keybind>
+    <keybind key="W-t">
+      <action name="Execute" command="subl"/>
+    </keybind>
+    <keybind key="W-p">
+      <action name="Execute" command="rofi -show combi -sidebar-mode"/>
+    </keybind>
+    <keybind key="W-x">
+      <action name="Execute" command="wlogout"/>
+    </keybind>
+    <keybind key="Print">
+      <action name="Execute" command="flameshot full"/>
+    </keybind>
+    <keybind key="C-Print">
+      <action name="Execute" command="flameshot gui"/>
+    </keybind>
+    <keybind key="W-S-b">
+      <action name="Execute" command="floorp"/>
+    </keybind>
+    <keybind key="W-S-v">
+      <action name="Execute" command="vivaldi"/>
+    </keybind>
+    <keybind key="W-S-f">
+      <action name="Execute" command="kitty -e ranger"/>
+    </keybind>
+    <keybind key="W-S-d">
+      <action name="Execute" command="wdisplays"/>
+    </keybind>
+    <keybind key="W-S-t">
+      <action name="Execute" command="io.github.kukuruzka165.materialgram"/>
+    </keybind>
+    <!-- Scripts -->
+    <keybind key="A-w">
+      <action name="Execute">
+        <command>~/.bin/wayland_set_wallpaper.sh</command>
+      </action>
+    </keybind>
+    <keybind key="A-p">
+      <action name="Execute">
+        <command>~/.bin/script_runner.sh</command>
+      </action>
+    </keybind>
+  </keyboard>
+  <mouse>
+    <!-- loads defaults -->
+    <default />
+    <!-- overriding the defaults here -->
+    <context name="Frame">
+      <mousebind button="A-Left" action="Drag">
+        <action name="Move" />
+      </mousebind>
+      <mousebind button="A-Right" action="Drag">
+        <action name="Resize" />
+      </mousebind>
+    </context>
+    <context name="Root">
+      <mousebind button="Right" action="Press">
+        <action name="ShowMenu" menu="root-menu" />
+      </mousebind>
+      <mousebind direction="Up" action="Scroll">
+        <action name="GoToDesktop" to="left" wrap="yes" />
+      </mousebind>
+      <mousebind direction="Down" action="Scroll">
+        <action name="GoToDesktop" to="right" wrap="yes" />
+      </mousebind>
+    </context>
+  </mouse>
+  <libinput>
+    <device>
+      <naturalScroll>yes</naturalScroll>
+    </device>
+  </libinput>
+  <!-- Window Rules -->
+  <windowRules>
+    <!-- <windowRule identifier="kitty">
+      <action name="Maximize"/>
+    </windowRule> -->
+    <windowRule identifier="firefox">
+      <action name="Maximize"/>
+    </windowRule>
+    <windowRule identifier="kitty">
+      <action name="Maximize"/>
+    </windowRule>
+    <windowRule identifier="kitty" serverDecoration="no"/>
+    <windowRule identifier="pcmanfm" serverDecoration="no"/>
+    <windowRule identifier="nemo" serverDecoration="no"/>
+    <windowRule identifier="subl" serverDecoration="no"/>
+    <windowRule identifier="VSCodium" serverDecoration="no"/>
+    <windowRule identifier="Spotify" serverDecoration="no"/>
+    <windowRule identifier="mpv" serverDecoration="no"/>
+    <windowRule identifier="mpv">
+      <action name="SnapToRegion" region="bottom-right"/>
+      <action name="ToggleAlwaysOnTop"/>
+    </windowRule>
+    <windowRule identifier="gsimplecal" serverDecoration="no"/>
+    <windowRule identifier="gsimplecal">
+      <action name="SnapToRegion" region="top-right"/>
+      <action name="ToggleAlwaysOnTop"/>
+    </windowRule>
+    <windowRule title="Picture-in-Picture*">
+      <action name="ToggleAlwaysOnTop"/>
+      <action name="SnapToRegion" region="bottom-right"/>
+      <!-- <action name="MoveTo" x="100%" y="100%" /> -->
+      <!-- <action name="ResizeTo" width="480" height="320" /> -->
+    </windowRule>
+  </windowRules>
+</labwc_config>

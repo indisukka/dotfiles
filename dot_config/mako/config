@@ -1,0 +1,28 @@
+font=AROneSansRetina 14
+default-timeout=5000
+anchor=top-right
+layer=overlay
+background-color=#1d1f21
+margin=5
+border-size=2
+border-color=#b294bb
+border-radius=5
+width=300
+height=300
+format=<b> %a</b>\n %s\n %b
+icons=1
+max-icon-size=32
+icon-location=left
+
+[urgency=normal]
+border-color=#b5bd68
+
+[urgency=high]
+border-color=#cc6666
+default-timeout=0
+
+#[app-name=Spotify]
+#border-color=#88c0d0
+
+[app-name="flameshot"]
+invisible=1

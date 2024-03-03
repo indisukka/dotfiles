@@ -1,0 +1,4 @@
+[default]
+path = "~/Pictures/walls/"
+duration = "5m"
+sorting = "ascending"

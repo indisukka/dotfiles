@@ -1,0 +1,45 @@
+import = [
+    "~/.config/alacritty/tomorrow-night.toml"
+]
+
+live_config_reload = true
+
+[window]
+dynamic_title = true
+opacity = 0.98
+startup_mode = "Maximized"
+
+[scrolling]
+history = 5000
+
+[font]
+size = 14
+
+[font.normal]
+family = "Geist Mono"
+style = "Regular"
+
+[font.italic]
+family = "Geist Mono"
+style = "Medium Italic"
+
+[font.bold]
+family = "Geist Mono"
+style = "Bold"
+
+[font.bold_italic]
+family = "Geist Mono"
+style = "Bold Italic"
+
+[font.offset]
+x = 0
+y = 7
+
+[cursor]
+blink_interval = 750
+thickness = 0.15
+unfocused_hollow = true
+
+[cursor.style]
+blinking = "On"
+shape = "Underline"

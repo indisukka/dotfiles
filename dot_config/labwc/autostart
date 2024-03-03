@@ -1,0 +1,28 @@
+# Auto start programs # is comment
+
+# polkit agent
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
+# Bar
+sfwbar >/dev/null 2>&1 &
+
+# Network Manager
+(sleep 5; nm-applet) &
+
+# Notification
+mako >/dev/null 2>&1 &
+
+# Power Manager
+slimbookbattery --minimize >/dev/null 2>&1 &
+
+# Clipboard
+copyq >/dev/null 2>&1 &
+
+# Bluetooth
+(blueman-applet) &
+
+# Kanshi
+kanshi >/dev/null 2>&1 &
+
+# Wallpaper
+#wpaperd >/dev/null 2>&1 &

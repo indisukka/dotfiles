@@ -1,0 +1,57 @@
+* {
+	background-image: none;
+}
+
+window {
+	background-color: rgba(31, 31, 31, 0.8);
+}
+
+button {
+	color: #c5c8c6;
+	font-size: 20px;
+	background-color: #1f1f1f;
+	border-style: solid;
+	border-width: 3px;
+	border-radius: 50;
+	border-color: #e6c547;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 30%;
+	margin: 10px;
+}
+
+button:focus {
+	background-color: #81a2be;
+	color: #1f1f1f;
+	outline-style: none;
+}
+
+#lock {
+	background-image: image(url("/home/gin/.config/wlogout/icons/lock.png"),
+			url("/usr/share/wlogout/icons/lock.png"));
+}
+
+#logout {
+	background-image: image(url("/home/gin/.config/wlogout/icons/logout.png"),
+			url("/usr/share/wlogout/icons/logout.png"));
+}
+
+#suspend {
+	background-image: image(url("/home/gin/.config/wlogout/icons/suspend.png"),
+			url("/usr/share/wlogout/icons/suspend.png"));
+}
+
+#hibernate {
+	background-image: image(url("/home/gin/.config/wlogout/icons/hibernate.png"),
+			url("/usr/share/wlogout/icons/hibernate.png"));
+}
+
+#shutdown {
+	background-image: image(url("/home/gin/.config/wlogout/icons/shutdown.png"),
+			url("/usr/share/wlogout/icons/shutdown.png"));
+}
+
+#reboot {
+	background-image: image(url("/home/gin/.config/wlogout/icons/reboot.png"),
+			url("/usr/share/wlogout/icons/reboot.png"));
+}

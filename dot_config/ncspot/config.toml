@@ -1,0 +1,46 @@
+# Base settings
+use_nerdfont=true
+volnorm=true
+bitrate=320
+shuffle=true
+notify = true
+
+# Key bindings
+[keybindings]
+"p" = "playpause"
+"Enter" = "play"
+"s" = "stop"
+"Space" = "queue"
+"<"="previous"
+">"="next"
+"Shift+a" = "goto artist"
+"a" = "goto album"
+"o" = "open selected"
+"Shift+o" = "open current"
+"r" = "repeat"
+"z" = "shuffle"
+"Shift+s" = "save"
+"Shift+y" = "share selected"
+"y" = "share current"
+
+# Sound
+"]" = "volup 5"
+"[" = "voldown 5"
+
+[theme]
+background = "#1D1F21"
+primary = "#C5C8C6"
+secondary = "#C5C8C6"
+title = "#B5BD68"
+playing = "#B5BD68"
+playing_selected = "#81A2BE"
+playing_bg = "#1D1F21"
+highlight = "#1D1F21"
+highlight_bg = "#B5BD68"
+error = "#1D1F21"
+error_bg = "#CC6666"
+statusbar = "#1D1F21"
+statusbar_progress = "#81A2BE"
+statusbar_bg = "#81A2BE"
+cmdline = "#70C0BA"
+cmdline_bg = "#1D1F21"
