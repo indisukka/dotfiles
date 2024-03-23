@@ -180,7 +180,7 @@
       <action name="Execute" command="discord"/>
     </keybind>
     <keybind key="W-f">
-      <action name="Execute" command="pcmanfm"/>
+      <action name="Execute" command="nemo"/>
     </keybind>
     <keybind key="W-t">
       <action name="Execute" command="subl"/>
@@ -190,6 +190,9 @@
     </keybind>
     <keybind key="W-x">
       <action name="Execute" command="wlogout"/>
+    </keybind>
+    <keybind key="W-v">
+      <action name="Execute" command="copyq toggle"/>
     </keybind>
     <keybind key="Print">
       <action name="Execute" command="flameshot full"/>
@@ -210,7 +213,7 @@
       <action name="Execute" command="wdisplays"/>
     </keybind>
     <keybind key="W-S-t">
-      <action name="Execute" command="io.github.kukuruzka165.materialgram"/>
+      <action name="Execute" command="telegram-desktop"/>
     </keybind>
     <!-- Scripts -->
     <keybind key="A-w">
