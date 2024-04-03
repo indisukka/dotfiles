@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <labwc_config>
   <theme>
-    <name>tomorrow-night-openbox</name>
+    <name>Numix-Clone</name>
     <cornerRadius>10</cornerRadius>
     <font name="Google Sans Text" size="12"/>
     <titleLayout>CLIM</titleLayout>

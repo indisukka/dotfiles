@@ -5,8 +5,8 @@
         "base16-tomorrow-night-dark"
     ],
     "workbench.colorTheme": "Base16 Tomorrow Night Dark",
-    "editor.fontFamily": "'JetBrains Mono','MonoLisa', 'monospace', monospace",
-    "editor.fontSize": 18,
+    "editor.fontFamily": "'Sometype Mono','MonoLisa', 'monospace', monospace",
+    "editor.fontSize": 20,
     "editor.fontLigatures": true,
     "terminal.integrated.cursorStyle": "underline",
     "terminal.integrated.fontFamily": "'JetBrains Mono', monospace",
@@ -41,5 +41,6 @@
     "[css]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "editor.lineHeight": 1.5
+    "editor.lineHeight": 1.5,
+    "editor.fontWeight": "500"
 }

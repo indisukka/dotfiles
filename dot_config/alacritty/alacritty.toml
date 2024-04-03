@@ -16,19 +16,19 @@ history = 5000
 size = 14
 
 [font.normal]
-family = "Geist Mono"
+family = "JetBrains Mono"
 style = "Regular"
 
 [font.italic]
-family = "Geist Mono"
+family = "JetBrains Mono"
 style = "Medium Italic"
 
 [font.bold]
-family = "Geist Mono"
+family = "JetBrains Mono"
 style = "Bold"
 
 [font.bold_italic]
-family = "Geist Mono"
+family = "JetBrains Mono"
 style = "Bold Italic"
 
 [font.offset]

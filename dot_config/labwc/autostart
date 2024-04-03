@@ -21,6 +21,12 @@ copyq >/dev/null 2>&1 &
 # Bluetooth
 (blueman-applet) &
 
+# Flameshot
+(sleep 15; flameshot) &
+
+# Megasync
+(sleep 20; megasync) &
+
 # Kanshi
 kanshi >/dev/null 2>&1 &
 
