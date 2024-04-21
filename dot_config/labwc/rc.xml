@@ -197,9 +197,6 @@
     <keybind key="Print">
       <action name="Execute" command="flameshot full"/>
     </keybind>
-    <keybind key="C-Print">
-      <action name="Execute" command="flameshot gui"/>
-    </keybind>
     <keybind key="W-S-b">
       <action name="Execute" command="floorp"/>
     </keybind>
@@ -225,6 +222,9 @@
       <action name="Execute">
         <command>~/.bin/script_runner.sh</command>
       </action>
+    </keybind>
+    <keybind key="C-Print">
+      <action name="Execute" command="/home/gin/.bin/wayland-screenshot-area.sh"/>
     </keybind>
   </keyboard>
   <mouse>

@@ -1,5 +1,5 @@
 #!/bin/sh
-killall swaybg
-varFileName=$(find ~/Pictures/wallpapers/ -type f | shuf -n 1)
+#killall swaybg >/dev/null 2>&1 
+varFileName=$(find ~/Pictures/wallpapers/ -maxdepth 1 -type f | shuf -n 1)
 # echo "$varFileName"
-swaybg -i "$varFileName" -m fill
+swaybg -m fill -i "$varFileName"
