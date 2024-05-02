@@ -33,8 +33,10 @@
     <region name="bottom-left" x="0%" y="70%" height="30%" width="30%" />
     <region name="bottom-right" x="70%" y="70%" height="30%" width="30%" />
   </regions>
-  <!-- Keyboard shortcuts -->
-  <keyboard>
+  <!-- Keyboard shortcuts --><windowRule identifier="mpv">
+      <action name="SnapToRegion" region="bottom-right"/>
+      <action name="ToggleAlwaysOnTop"/>
+    </windowRule>
     <!-- Window manager controls -->
     <keybind key="W-Space">
       <action name="ShowMenu" menu="root-menu"/>
@@ -274,10 +276,11 @@
     <windowRule identifier="VSCodium" serverDecoration="no"/>
     <windowRule identifier="Spotify" serverDecoration="no"/>
     <windowRule identifier="mpv" serverDecoration="no"/>
-    <windowRule identifier="mpv">
+    <windowRule identifier="thunar" serverDecoration="no"/>
+    <!-- <windowRule identifier="mpv">
       <action name="SnapToRegion" region="bottom-right"/>
       <action name="ToggleAlwaysOnTop"/>
-    </windowRule>
+    </windowRule> -->
     <windowRule identifier="gsimplecal" serverDecoration="no"/>
     <windowRule identifier="gsimplecal">
       <action name="SnapToRegion" region="top-right"/>
