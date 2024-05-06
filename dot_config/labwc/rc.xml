@@ -3,7 +3,7 @@
   <theme>
     <name>Numix-Clone</name>
     <cornerRadius>10</cornerRadius>
-    <font name="Google Sans Text" size="12"/>
+    <font name="Whitney Book" size="12"/>
     <titleLayout>CLIM</titleLayout>
   </theme>
   <windowSwitcher show="yes" preview="yes" outlines="yes">
@@ -33,10 +33,8 @@
     <region name="bottom-left" x="0%" y="70%" height="30%" width="30%" />
     <region name="bottom-right" x="70%" y="70%" height="30%" width="30%" />
   </regions>
-  <!-- Keyboard shortcuts --><windowRule identifier="mpv">
-      <action name="SnapToRegion" region="bottom-right"/>
-      <action name="ToggleAlwaysOnTop"/>
-    </windowRule>
+  <!-- Keyboard shortcuts -->
+  <keyboard>
     <!-- Window manager controls -->
     <keybind key="W-Space">
       <action name="ShowMenu" menu="root-menu"/>
@@ -228,8 +226,9 @@
     <keybind key="C-Print">
       <action name="Execute" command="/home/gin/.bin/wayland-screenshot-area.sh"/>
     </keybind>
-  </keyboard>
-  <mouse>
+    </keyboard>
+<!-- Mouse Related -->
+    <mouse>
     <!-- loads defaults -->
     <default />
     <!-- overriding the defaults here -->
@@ -258,30 +257,25 @@
       <naturalScroll>yes</naturalScroll>
     </device>
   </libinput>
+
   <!-- Window Rules -->
   <windowRules>
-    <!-- <windowRule identifier="kitty">
-      <action name="Maximize"/>
-    </windowRule> -->
+        <!-- No server decoration for any apps (top bar) -->
+    <windowRule identifier="*" serverDecoration="no"/>
+    <!-- Overrides for the window decoration rule -->
+    <windowRule identifier="nwg-look" serverDecoration="yes"/>
+    <!-- App specific rules -->
     <windowRule identifier="firefox">
       <action name="Maximize"/>
     </windowRule>
     <windowRule identifier="kitty">
       <action name="Maximize"/>
     </windowRule>
-    <windowRule identifier="kitty" serverDecoration="no"/>
-    <windowRule identifier="pcmanfm" serverDecoration="no"/>
-    <windowRule identifier="nemo" serverDecoration="no"/>
-    <windowRule identifier="subl" serverDecoration="no"/>
-    <windowRule identifier="VSCodium" serverDecoration="no"/>
-    <windowRule identifier="Spotify" serverDecoration="no"/>
-    <windowRule identifier="mpv" serverDecoration="no"/>
-    <windowRule identifier="thunar" serverDecoration="no"/>
-    <!-- <windowRule identifier="mpv">
-      <action name="SnapToRegion" region="bottom-right"/>
+    <windowRule identifier="mpv">
+      <!-- <action name="SnapToRegion" region="bottom-right"/> -->
+      <action name="ResizeTo" width="480" height="320" />
       <action name="ToggleAlwaysOnTop"/>
-    </windowRule> -->
-    <windowRule identifier="gsimplecal" serverDecoration="no"/>
+    </windowRule>
     <windowRule identifier="gsimplecal">
       <action name="SnapToRegion" region="top-right"/>
       <action name="ToggleAlwaysOnTop"/>
@@ -289,8 +283,8 @@
     <windowRule title="Picture-in-Picture*">
       <action name="ToggleAlwaysOnTop"/>
       <action name="SnapToRegion" region="bottom-right"/>
-      <!-- <action name="MoveTo" x="100%" y="100%" /> -->
-      <!-- <action name="ResizeTo" width="480" height="320" /> -->
+      <action name="MoveTo" x="100%" y="100%" />
+      <action name="ResizeTo" width="480" height="320" />
     </windowRule>
   </windowRules>
 </labwc_config>

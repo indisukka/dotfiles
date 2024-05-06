@@ -4,9 +4,8 @@
         "base16-tomorrow-dark",
         "base16-tomorrow-night-dark"
     ],
-    "workbench.colorTheme": "Base16 Tomorrow Night Dark",
-    "editor.fontFamily": "'Intel One Mono','MonoLisa', 'monospace', monospace",
-    "editor.fontSize": 17,
+    "editor.fontFamily": "'Twilio Sans Mono','MonoLisa', 'monospace', monospace",
+    "editor.fontSize": 16,
     "editor.fontLigatures": true,
     "terminal.integrated.cursorStyle": "underline",
     "terminal.integrated.fontFamily": "'JetBrains Mono', monospace",
@@ -42,5 +41,9 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "editor.lineHeight": 1.5,
-    "editor.fontWeight": "500"
+    "editor.fontWeight": "500",
+    "workbench.colorTheme": "Base16 Tomorrow Dark",
+    "workbench.iconTheme": "material-icon-theme",
+    "material-icon-theme.folders.color": "#26a69a",
+    "material-icon-theme.files.color": "#ff7043"
 }
