@@ -177,10 +177,10 @@
       <action name="Execute" command="spotify"/>
     </keybind>
     <keybind key="W-d">
-      <action name="Execute" command="discord"/>
+      <action name="Execute" command="/usr/bin/discord --enable-features=UseOzonePlatform --ozone-platform=wayland"/>
     </keybind>
     <keybind key="W-f">
-      <action name="Execute" command="pcmanfm"/>
+      <action name="Execute" command="thunar"/>
     </keybind>
     <keybind key="W-t">
       <action name="Execute" command="subl"/>
@@ -225,6 +225,9 @@
     </keybind>
     <keybind key="C-Print">
       <action name="Execute" command="/home/gin/.bin/wayland-screenshot-area.sh"/>
+    </keybind>
+    <keybind key="A-n">
+      <action name="Execute" command="/home/gin/.bin/toggle-sfwbar.sh"/>
     </keybind>
     </keyboard>
 <!-- Mouse Related -->

@@ -1,12 +1,23 @@
 {
     "base16.generator.activatedThemes": [
+        "base16-3024-dark",
+        "base16-brogrammer-dark",
+        "base16-darcula-dark",
         "base16-default-dark",
+        "base16-google-dark",
+        "base16-material-dark",
+        "base16-material-darker",
+        "base16-solarized-dark",
+        "base16-spaceduck-dark",
+        "base16-spacemacs-dark",
         "base16-tomorrow-dark",
         "base16-tomorrow-night-dark"
     ],
-    "editor.fontFamily": "'MonoLisa', 'monospace', monospace",
+    "editor.fontFamily": "'intel one mono','MonoLisa', monospace",
     "editor.fontSize": 15,
     "editor.fontLigatures": true,
+    "editor.lineHeight": 1.8,
+    "editor.fontWeight": "400",
     "terminal.integrated.cursorStyle": "underline",
     "terminal.integrated.fontFamily": "'JetBrains Mono', monospace",
     "terminal.integrated.fontSize": 13,
@@ -40,9 +51,7 @@
     "[css]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "editor.lineHeight": 1.5,
-    "editor.fontWeight": "500",
-    "workbench.colorTheme": "Base16 Tomorrow Dark",
+    "workbench.colorTheme": "Base16 Tomorrow Night Dark",
     "workbench.iconTheme": "material-icon-theme",
     "material-icon-theme.folders.color": "#26a69a",
     "material-icon-theme.files.color": "#ff7043"

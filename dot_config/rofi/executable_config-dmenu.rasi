@@ -1,7 +1,7 @@
 configuration {
 	modi:                   "combi";
 	combi-modi:             "drun,run";
-	font:                   "Haskoy Bold 16";
+	font:                   "Sometype Mono Bold 16";
 	show-icons:             true;
 	disable-history:        false;
 	combi-hide-mode-prefix: true;
