@@ -13,8 +13,7 @@
         "base16-tomorrow-dark",
         "base16-tomorrow-night-dark"
     ],
-    "editor.fontFamily": "'intel one mono','MonoLisa', monospace",
-    "editor.fontSize": 15,
+    "editor.fontFamily": "'cascadia code', monospace",
     "editor.fontLigatures": true,
     "editor.lineHeight": 1.8,
     "editor.fontWeight": "400",
@@ -51,8 +50,9 @@
     "[css]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "workbench.colorTheme": "Base16 Tomorrow Night Dark",
+    "workbench.colorTheme": "Bearded Theme Black & Ruby",
     "workbench.iconTheme": "material-icon-theme",
     "material-icon-theme.folders.color": "#26a69a",
-    "material-icon-theme.files.color": "#ff7043"
+    "material-icon-theme.files.color": "#ff7043",
+    "editor.fontSize": 16
 }
