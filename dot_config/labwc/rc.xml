@@ -180,7 +180,7 @@
       <action name="Execute" command="/usr/bin/discord --enable-features=UseOzonePlatform --ozone-platform=wayland"/>
     </keybind>
     <keybind key="W-f">
-      <action name="Execute" command="thunar"/>
+      <action name="Execute" command="pcmanfm"/>
     </keybind>
     <keybind key="W-t">
       <action name="Execute" command="subl"/>
