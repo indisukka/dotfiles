@@ -13,9 +13,9 @@
         "base16-tomorrow-dark",
         "base16-tomorrow-night-dark"
     ],
-    "editor.fontFamily": "'cascadia code', monospace",
+    "editor.fontFamily": "'CommitMono', monospace",
     "editor.fontLigatures": true,
-    "editor.lineHeight": 1.8,
+    "editor.lineHeight": 1.7,
     "editor.fontWeight": "400",
     "terminal.integrated.cursorStyle": "underline",
     "terminal.integrated.fontFamily": "'JetBrains Mono', monospace",
@@ -50,9 +50,13 @@
     "[css]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "workbench.colorTheme": "Bearded Theme Black & Ruby",
-    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Bearded Theme feat. Melle Julie",
     "material-icon-theme.folders.color": "#26a69a",
     "material-icon-theme.files.color": "#ff7043",
-    "editor.fontSize": 16
+    "editor.fontSize": 14,
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.selectionClipboard": false,
+    "workbench.iconTheme": "material-icon-theme"
 }

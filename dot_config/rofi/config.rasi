@@ -1,7 +1,7 @@
 configuration {
 	modi:                   "combi,window";
 	combi-modi:             "drun,run";
-	font:                   "Geist Mono Medium 15";
+	font:                   "Cartograph CF 14";
 	show-icons:             true;
 	disable-history:        false;
 	combi-hide-mode-prefix: true;
