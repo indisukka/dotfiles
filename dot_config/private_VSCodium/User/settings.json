@@ -13,12 +13,12 @@
         "base16-tomorrow-dark",
         "base16-tomorrow-night-dark"
     ],
-    "editor.fontFamily": "'CommitMono', monospace",
+    "editor.fontFamily": "'cascadia code', monospace",
     "editor.fontLigatures": true,
     "editor.lineHeight": 1.7,
     "editor.fontWeight": "400",
     "terminal.integrated.cursorStyle": "underline",
-    "terminal.integrated.fontFamily": "'JetBrains Mono', monospace",
+    "terminal.integrated.fontFamily": "'m plus code latin semiexpanded', monospace",
     "terminal.integrated.fontSize": 13,
     "terminal.integrated.fontWeight": "normal",
     "terminal.integrated.lineHeight": 1.5,
@@ -50,7 +50,7 @@
     "[css]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "workbench.colorTheme": "Bearded Theme feat. Melle Julie",
+    "workbench.colorTheme": "Base16 Tomorrow Dark",
     "material-icon-theme.folders.color": "#26a69a",
     "material-icon-theme.files.color": "#ff7043",
     "editor.fontSize": 14,
@@ -58,5 +58,6 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "editor.selectionClipboard": false,
-    "workbench.iconTheme": "material-icon-theme"
+    "workbench.iconTheme": "material-icon-theme",
+    "terminal.integrated.defaultProfile.linux": "bash"
 }
