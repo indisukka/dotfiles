@@ -6,7 +6,7 @@ configuration {
 	disable-history:        false;
 	combi-hide-mode-prefix: true;
 	drun-display-format:    "{name}";
-	max-history-size:       5;
+	max-history-size:       10;
 	terminal:               "kitty";
 	sidebar-mode:			true;
 	matching:				"prefix";

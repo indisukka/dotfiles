@@ -198,7 +198,7 @@
       <action name="Execute" command="flameshot full"/>
     </keybind>
     <keybind key="W-S-b">
-      <action name="Execute" command="floorp"/>
+      <action name="Execute" command="zen-browser"/>
     </keybind>
     <keybind key="W-S-v">
       <action name="Execute" command="vivaldi"/>

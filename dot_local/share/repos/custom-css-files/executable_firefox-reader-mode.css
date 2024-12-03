@@ -1,14 +1,14 @@
 @-moz-document url-prefix("about:reader")
 {
 	h1.reader-title{
-		font-family: 'Google Sans', sans-serif !important;
+		font-family: 'Google Sans Text', sans-serif !important;
 		font-weight:  bold !important; 
 		color: #81a2be !important;
 		font-size: 2.5rem !important;
 	}
 
 	h2{
-		font-family: 'Google Sans', sans-serif !important;
+		font-family: 'Google Sans Text', sans-serif !important;
 		font-weight:  bold !important; 
 		color: #81a2be !important;
 		font-size: 2.0rem !important;

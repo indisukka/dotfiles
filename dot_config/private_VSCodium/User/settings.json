@@ -13,7 +13,7 @@
         "base16-tomorrow-dark",
         "base16-tomorrow-night-dark"
     ],
-    "editor.fontFamily": "'cascadia code', monospace",
+    "editor.fontFamily": "'MD System Mono Trial','MD IO trial','cascadia code', monospace",
     "editor.fontLigatures": true,
     "editor.lineHeight": 1.7,
     "editor.fontWeight": "400",
