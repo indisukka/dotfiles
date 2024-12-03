@@ -5,6 +5,12 @@ profile mobile {
 
 profile dock {
 	output eDP-1 disable 
+	output DP-3 mode 1920x1080@60Hz position 0,0 transform normal
+	exec ~/.bin/relaunch-sfwbar
+}
+
+profile dock2 {
+	output eDP-1 disable 
 	output DP-2 mode 1920x1080@60Hz position 0,0 transform normal
 	exec ~/.bin/relaunch-sfwbar
 }
