@@ -229,6 +229,9 @@
     <keybind key="A-n">
       <action name="Execute" command="/home/gin/.bin/toggle-sfwbar.sh"/>
     </keybind>
+    <keybind key="A-Print">
+      <action name="Execute" command="/home/gin/.bin/screenrecord.sh"/>
+    </keybind>
     </keyboard>
 <!-- Mouse Related -->
     <mouse>
