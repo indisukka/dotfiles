@@ -3,7 +3,7 @@
   <theme>
     <name>Numix-Clone</name>
     <cornerRadius>10</cornerRadius>
-    <font name="Whitney Book" size="12"/>
+    <font name="Lato" size="13"/>
     <titleLayout>CLIM</titleLayout>
   </theme>
   <windowSwitcher show="yes" preview="yes" outlines="yes">
