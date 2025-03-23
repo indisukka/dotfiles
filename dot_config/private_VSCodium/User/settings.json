@@ -4,11 +4,11 @@
         "base16-ia-dark",
         "base16-tomorrow-night-dark"
     ],
-    "editor.fontFamily": "'sometype mono', monospace",
-    "editor.fontSize": 14,
+    "editor.fontFamily": "'Office Code Pro D', monospace",
+    "editor.fontSize": 16,
     "editor.fontLigatures": true,
     "editor.lineHeight": 1.6,
-    "editor.fontWeight": "500",
+    "editor.fontWeight": "400",
     "terminal.integrated.cursorStyle": "underline",
     "terminal.integrated.fontFamily": "'m plus code latin semiexpanded', monospace",
     "terminal.integrated.fontSize": 13,
@@ -42,7 +42,6 @@
     "[css]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "workbench.colorTheme": "Bearded Theme Black & Amethyst",
     "material-icon-theme.folders.color": "#26a69a",
     "material-icon-theme.files.color": "#ff7043",
     "[json]": {
@@ -50,5 +49,8 @@
     },
     "editor.selectionClipboard": false,
     "workbench.iconTheme": "material-icon-theme",
-    "terminal.integrated.defaultProfile.linux": "bash"
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "workbench.colorTheme": "Base16 Tomorrow Night Dark",
+    "redhat.telemetry.enabled": false,
+    "window.zoomLevel": 0.2
 }
