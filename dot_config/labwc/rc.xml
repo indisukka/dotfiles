@@ -5,20 +5,22 @@
     <cornerRadius>10</cornerRadius>
     <font name="Lato" size="13"/>
     <titleLayout>CLIM</titleLayout>
+    <icon>Adwaita</icon>
   </theme>
-  <windowSwitcher show="yes" preview="yes" outlines="yes">
+  <windowSwitcher show="yes" preview="no" outlines="yes" allWorkspaces="yes">
     <fields>
-      <!-- <field content="type" width="25%" /> -->
-      <field content="identifier" width="25%" />
-      <field content="title" width="75%" />
+    <field content="workspace" width="10%" />
+    <field content="icon" width="10%" />
+    <field content="identifier" width="20%" />
+    <field content="title" width="60%" />
     </fields>
   </windowSwitcher>
 
   <desktops>
     <popupTime>1000</popupTime>
     <names>
-      <name>Workspace 1</name>
-      <name>Workspace 2</name>
+      <name>W1</name>
+      <name>W2</name>
     </names>
   </desktops>
   <!-- Set up regions -->
@@ -196,6 +198,9 @@
     </keybind>
     <keybind key="Print">
       <action name="Execute" command="flameshot full"/>
+    </keybind>
+    <keybind key="W-Print">
+      <action name="Execute" command="flameshot gui"/>
     </keybind>
     <keybind key="W-S-b">
       <action name="Execute" command="zen-browser"/>
