@@ -4,8 +4,8 @@
         "base16-ia-dark",
         "base16-tomorrow-night-dark"
     ],
-    "editor.fontFamily": "'Office Code Pro D', monospace",
-    "editor.fontSize": 16,
+    "editor.fontFamily": "'Office Code Pro', monospace",
+    "editor.fontSize": 14,
     "editor.fontLigatures": true,
     "editor.lineHeight": 1.6,
     "editor.fontWeight": "400",
