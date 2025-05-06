@@ -50,7 +50,8 @@
     "editor.selectionClipboard": false,
     "workbench.iconTheme": "material-icon-theme",
     "terminal.integrated.defaultProfile.linux": "bash",
-    "workbench.colorTheme": "Base16 Tomorrow Night Dark",
+    "workbench.colorTheme": "Base16 Tomorrow Dark",
     "redhat.telemetry.enabled": false,
-    "window.zoomLevel": 0.2
+    "window.zoomLevel": 0.2,
+    "editor.minimap.enabled": false
 }
