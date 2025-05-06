@@ -16,19 +16,19 @@ history = 5000
 size = 13
 
 [font.normal]
-family = "JetBrains Mono"
+family = "Office Code Pro"
 style = "Regular"
 
 [font.italic]
-family = "JetBrains Mono"
+family = "Office Code Pro"
 style = "Medium Italic"
 
 [font.bold]
-family = "JetBrains Mono"
+family = "Office Code Pro"
 style = "Bold"
 
 [font.bold_italic]
-family = "JetBrains Mono"
+family = "Office Code Pro"
 style = "Bold Italic"
 
 [font.offset]
