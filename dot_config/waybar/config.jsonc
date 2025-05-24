@@ -1,0 +1,104 @@
+{
+  "layer": "bottom",
+  "position": "top",
+  "height": 40,
+  "spacing": 4,
+  "modules-left": ["custom/os_button","wlr/taskbar"],
+  "modules-center": [],
+  "modules-right": [
+    "tray",
+    "cpu",
+    "memory",
+    "disk",
+    "battery",
+    "clock",
+    "pulseaudio",
+    "idle_inhibitor"
+  ],
+  "tray": {
+    "icon-size": 20,
+    "spacing": 10
+  },
+
+  "cpu": {
+    "interval": 5,
+    "format": "{usage}% \udb80\udf5b",
+    "tooltip": false
+  },
+  "memory": {
+    "format": "{percentage}% \uf538"
+  },
+  "disk": {
+    "interval": 30,
+    "format": "{percentage_free}% \uede9"
+  },
+  "battery": {
+    "states": {
+      "half": 50,
+      "thirty": 30,
+      "critical": 15
+    },
+    "interval": 60,
+    "format": "{capacity}% {icon}",
+    "format-full": "{capacity}% {icon}",
+    "format-charging": "{capacity}% \udb80\udc84",
+    "format-plugged": "{capacity}% \udb80\udc85",
+    "format-alt": "{time} {icon}",
+    "format-icons": [
+      "\udb80\udc7a",
+      "\udb80\udc7c",
+      "\udb80\udc7e",
+      "\udb80\udc80",
+      "\udb80\udc82"
+    ]
+  },
+  "clock": {
+    // "timezone": "America/New_York",
+    "format": "{:%a, %d %b %R}",
+    // "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    // "format-alt": "{:%Y-%m-%d}",
+    "on-click": "gsimplecal",
+    "tooltip": false
+    
+  },
+  "pulseaudio": {
+    // "scroll-step": 1, // %, can be a float
+    "format": "{volume}% {icon} {format_source}",
+    "format-bluetooth": "{volume}% {icon}",
+    "format-bluetooth-muted": " {icon}",
+    "format-muted": "",
+    "format-source": "{volume}% ",
+    "format-source-muted": "",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", "", ""]
+    },
+    "on-click": "pavucontrol"
+  },
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "",
+      "deactivated": ""
+    }
+  },
+  "wlr/taskbar": {
+    "format": "{icon} {title:.20}",
+    "icon-size": 24,
+    "spacing": 3,
+    "on-click-middle": "close",
+    "tooltip-format": "{title}",
+    "ignore-list": [],
+    "on-click": "activate"
+  },
+  "custom/os_button": {
+    "format": "\udb82\udcc7",
+    "on-click": "rofi -show combi -sidebar-mode",
+    "tooltip": false
+  }
+}

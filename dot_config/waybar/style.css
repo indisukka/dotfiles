@@ -1,0 +1,75 @@
+@define-color bg_main #1d1f21;
+@define-color bg_active #de935f;
+@define-color fg_main #c5c8c6;
+@define-color red #cc6666;
+@define-color yellow #f0c674;
+@define-color green #8fe737;
+@define-color orange #de935f;
+
+* {
+  /* `otf-font-awesome` is required to be installed for icons */
+  font-family: FontAwesome, "Spotify Mix", sans-serif;
+  font-size: 15px;
+}
+
+window#waybar {
+  background-color: @bg_main;
+  color: @fg_main;
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+#taskbar {
+  background-color: @bg_main;
+}
+
+#taskbar button {
+  min-width: 100px;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+#taskbar button.active {
+  border-bottom: 4px solid @bg_active;
+}
+
+#custom-os_button {
+  font-size: 28px;
+}
+
+#cpu,
+#memory,
+#disk,
+#battery,
+#clock,
+#pulseaudio,
+#idle_inhibitor {
+  padding: 5px;
+}
+
+#tray {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#battery.critical {
+  background: @red;
+  color: #1d1f21;
+}
+
+#battery.thirty {
+  background: @orange;
+  color: #1d1f21;
+}
+
+#battery.half {
+  background: @yellow;
+  color: #1d1f21;
+}
+
+#pulseaudio.bluetooth{
+  padding: 10px;
+}
