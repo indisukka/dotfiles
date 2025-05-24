@@ -3,9 +3,9 @@
   <theme>
     <name>Numix-Clone</name>
     <cornerRadius>10</cornerRadius>
-    <font name="Lato" size="13"/>
+    <font name="Cantarell" size="12"/>
     <titleLayout>CLIM</titleLayout>
-    <icon>Adwaita</icon>
+    <icon>Papirus-Dark</icon>
   </theme>
   <windowSwitcher show="yes" preview="no" outlines="yes" allWorkspaces="yes">
     <fields>
