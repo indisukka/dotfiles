@@ -1,19 +1,27 @@
 {
   "layer": "bottom",
   "position": "top",
-  "height": 40,
+  "height": 36,
   "spacing": 4,
-  "modules-left": ["custom/os_button","wlr/taskbar"],
+  // "width": 100,
+  "expand-left": true,
+  "modules-left": [
+    "custom/os_button",
+    "custom/file_manager",
+    "custom/web_browser",
+    // "custom/calibri",
+    "wlr/taskbar"
+  ],
   "modules-center": [],
   "modules-right": [
     "tray",
-    "cpu",
-    "memory",
+    // "cpu",
+    // "memory",
     "disk",
     "battery",
-    "clock",
     "pulseaudio",
-    "idle_inhibitor"
+    "clock"
+    // "idle_inhibitor"
   ],
   "tray": {
     "icon-size": 20,
@@ -30,7 +38,8 @@
   },
   "disk": {
     "interval": 30,
-    "format": "{percentage_free}% \uede9"
+    "format": "{specific_free:0.2f}GB \uede9",
+    "unit": "GB"
   },
   "battery": {
     "states": {
@@ -41,16 +50,10 @@
     "interval": 60,
     "format": "{capacity}% {icon}",
     "format-full": "{capacity}% {icon}",
-    "format-charging": "{capacity}% \udb80\udc84",
-    "format-plugged": "{capacity}% \udb80\udc85",
+    "format-charging": "{capacity}% 󰢝",
+    "format-plugged": "{capacity}% 󰂅",
     "format-alt": "{time} {icon}",
-    "format-icons": [
-      "\udb80\udc7a",
-      "\udb80\udc7c",
-      "\udb80\udc7e",
-      "\udb80\udc80",
-      "\udb80\udc82"
-    ]
+    "format-icons": ["󰁺", "󰁻", "󰁾", "󰂀", "󰂂", "󰁹"]
   },
   "clock": {
     // "timezone": "America/New_York",
@@ -59,20 +62,19 @@
     // "format-alt": "{:%Y-%m-%d}",
     "on-click": "gsimplecal",
     "tooltip": false
-    
   },
   "pulseaudio": {
     // "scroll-step": 1, // %, can be a float
     "format": "{volume}% {icon} {format_source}",
     "format-bluetooth": "{volume}% {icon}",
-    "format-bluetooth-muted": " {icon}",
-    "format-muted": "",
+    "format-bluetooth-muted": "󰝟 {icon}",
+    "format-muted": "󰝟",
     "format-source": "{volume}% ",
     "format-source-muted": "",
     "format-icons": {
       "headphone": "",
-      "hands-free": "",
-      "headset": "",
+      "hands-free": "󰓃",
+      "headset": "󰓃",
       "phone": "",
       "portable": "",
       "car": "",
@@ -88,17 +90,33 @@
     }
   },
   "wlr/taskbar": {
-    "format": "{icon} {title:.20}",
+    "format": "{icon} {title:.15}",
     "icon-size": 24,
     "spacing": 3,
     "on-click-middle": "close",
+    "on-click": "minimize-raise",
     "tooltip-format": "{title}",
-    "ignore-list": [],
-    "on-click": "activate"
+    "ignore-list": ["gsimplecal"]
   },
   "custom/os_button": {
-    "format": "\udb82\udcc7",
+    "format": "",
     "on-click": "rofi -show combi -sidebar-mode",
     "tooltip": false
+  },
+  "custom/file_manager": {
+    "tooltip-format": "File Manager",
+    "format": "󰝰",
+    "on-click": "nemo"
+  }
+  ,
+  "custom/web_browser": {
+    "tooltip-format": "Web Browser",
+    "format": "󰈹",
+    "on-click": "zen-browser"
+  },
+  "custom/calibri":{
+    "tooltip-format": "Calibre E-reader",
+    "format": "󰂺",
+    "on-click": "com.calibre_ebook.calibre"
   }
 }

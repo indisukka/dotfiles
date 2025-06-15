@@ -8,7 +8,7 @@
 
 * {
   /* `otf-font-awesome` is required to be installed for icons */
-  font-family: FontAwesome, "Spotify Mix", sans-serif;
+  font-family: FontAwesome, "Atkinson Hyperlegible Next","Spotify Mix", sans-serif;
   font-size: 15px;
 }
 
@@ -37,8 +37,13 @@ window#waybar.hidden {
   border-bottom: 4px solid @bg_active;
 }
 
-#custom-os_button {
-  font-size: 28px;
+#custom-os_button,
+#custom-file_manager,
+#custom-web_browser,
+#custom-calibri {
+  font-size: 24px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 #cpu,
