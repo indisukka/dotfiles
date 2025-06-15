@@ -4,7 +4,7 @@
         "base16-ia-dark",
         "base16-tomorrow-night-dark"
     ],
-    "editor.fontFamily": "'Office Code Pro', monospace",
+    "editor.fontFamily": "'Office Code Pro', monospace, 'symbols nerd font mono'",
     "editor.fontSize": 13,
     "editor.fontLigatures": true,
     "editor.lineHeight": 1.6,
@@ -57,5 +57,6 @@
     "[jsonc]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "window.customTitleBarVisibility": "windowed"
+    "window.customTitleBarVisibility": "windowed",
+    "git.confirmSync": false
 }
