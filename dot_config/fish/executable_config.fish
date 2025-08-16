@@ -117,8 +117,8 @@ alias yvp='yt-dlp --config-location "$HOME/.config/yt-dlp/config_playlist"'
 alias yvp-batch='yt-dlp -a "$HOME/Videos/ytp-batch.txt" --config-location "$HOME/.config/yt-dlp/config_playlist"'
 
 # Audio Alias
-alias ya='yt-dlp -o "$HOME/Downloads/yt_audio/%(title)s_%(channel)s.%(ext)s" -x --audio-format "vorbis" --audio-quality "best"'
-alias yap='yt-dlp -o "$HOME/Downloads/yt_audio/%(playlist_title)s/%(playlist_index)s_%(title)s.%(ext)s" -x --audio-format "best" --audio-quality "best" '
+alias ya='yt-dlp --ignore-config -o "$HOME/Downloads/yt_audio/%(title)s_%(channel)s.%(ext)s" -x --audio-format "vorbis" --audio-quality "best"'
+alias yap='yt-dlp --ignore-config -o "$HOME/Downloads/yt_audio/%(playlist_title)s/%(playlist_index)s_%(title)s.%(ext)s" -x --audio-format "best" --audio-quality "best" '
 
 # eza as ls alias
 alias l='eza -la --group-directories-first'

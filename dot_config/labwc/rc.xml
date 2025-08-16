@@ -282,6 +282,9 @@
     <windowRule identifier="kitty">
       <action name="Maximize"/>
     </windowRule>
+    <windowRule identifier="sublime_text">
+      <action name="Maximize"/>
+    </windowRule>
     <windowRule identifier="mpv">
       <!-- <action name="SnapToRegion" region="bottom-right"/> -->
       <action name="ResizeTo" width="480" height="320" />

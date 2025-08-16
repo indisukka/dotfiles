@@ -4,8 +4,8 @@
         "base16-ia-dark",
         "base16-tomorrow-night-dark"
     ],
-    "editor.fontFamily": "'Office Code Pro', monospace, 'symbols nerd font mono'",
-    "editor.fontSize": 13,
+    "editor.fontFamily": "'Google Sans Code','Geist Mono', monospace, 'symbols nerd font mono'",
+    "editor.fontSize": 14,
     "editor.fontLigatures": true,
     "editor.lineHeight": 1.6,
     "editor.fontWeight": "400",
