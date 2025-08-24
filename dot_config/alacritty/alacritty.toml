@@ -16,19 +16,19 @@ history = 5000
 size = 13
 
 [font.normal]
-family = "Office Code Pro"
+family = "Drafting Mono"
 style = "Regular"
 
 [font.italic]
-family = "Office Code Pro"
+family = "Drafting Mono"
 style = "Medium Italic"
 
 [font.bold]
-family = "Office Code Pro"
+family = "Drafting Mono"
 style = "Bold"
 
 [font.bold_italic]
-family = "Office Code Pro"
+family = "Drafting Mono"
 style = "Bold Italic"
 
 [font.offset]
