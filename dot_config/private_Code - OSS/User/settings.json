@@ -4,7 +4,7 @@
         "base16-solar-flare-dark",
         "base16-tomorrow-night-dark"
     ],
-    "workbench.colorTheme": "Base16 Default Dark",
+    "workbench.colorTheme": "Base16 Tomorrow Night Dark",
     "workbench.iconTheme": "material-icon-theme",
     "editor.fontFamily": "'offlig','m plus code latin',monospace, 'symbols nerd font mono'",
     "editor.fontSize": 14,
