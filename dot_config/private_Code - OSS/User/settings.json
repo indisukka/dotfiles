@@ -6,8 +6,8 @@
     ],
     "workbench.colorTheme": "Base16 Tomorrow Night Dark",
     "workbench.iconTheme": "material-icon-theme",
-    "editor.fontFamily": "'offlig','m plus code latin',monospace, 'symbols nerd font mono'",
-    "editor.fontSize": 14,
+    "editor.fontFamily": "'fira code retina','m plus code latin','offlig',monospace,'FontAwesome', 'symbols nerd font mono'",
+    "editor.fontSize": 13,
     "editor.fontLigatures": true,
     "editor.lineHeight": 1.7,
     "editor.fontWeight": "400",
@@ -19,7 +19,7 @@
     "terminal.integrated.lineHeight": 1.5,
     "terminal.integrated.defaultProfile.linux": "fish",
     "terminal.external.linuxExec": "alacritty",
-    "window.zoomLevel": 0.6,
+    "window.zoomLevel": 1.0,
     "editor.minimap.enabled": false,
     "[xml]": {
         "editor.defaultFormatter": "DotJoshJohnson.xml"
@@ -45,5 +45,23 @@
         "monospace": "12px"
     },
     "customizeUI.font.monospace": "'jetbrains mono'",
-    "redhat.telemetry.enabled": false
+    "redhat.telemetry.enabled": false,
+    "git.confirmSync": false,
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "shellformat.effectLanguages": [
+        
+        "shellscript",
+        "dockerfile",
+        "dotenv",
+        "hosts",
+        "jvmoptions",
+        "ignore",
+        "gitignore",
+        "properties",
+        "spring-boot-properties",
+        "azcli",
+        "bats"
+    ]
 }
