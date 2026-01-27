@@ -3,13 +3,15 @@
 @define-color fg_main #c5c8c6;
 @define-color red #cc6666;
 @define-color yellow #f0c674;
-@define-color green #8fe737;
+@define-color green #9ec400;
 @define-color orange #de935f;
+@define-color blue #81a2be;
+@define-color cyan #70c0ba;
 
 * {
   /* `otf-font-awesome` is required to be installed for icons */
-  font-family: FontAwesome, "Bricolage Grotesque", sans-serif;
-  font-size: 15px;
+  font-family: FontAwesome,'symbols nerd font mono',"M Plus Code Latin", "Bricolage Grotesque", sans-serif;
+  font-size: 14px;
 }
 
 window#waybar {
@@ -26,11 +28,11 @@ window#waybar.hidden {
 }
 
 #taskbar button {
-  min-width: 100px;
+  /* min-width: 50px; */
   margin-left: 2px;
   margin-right: 2px;
-  padding-left: 8px;
-  padding-right: 8px;
+  /* padding-left: 2px;
+  padding-right: 2px; */
 }
 
 #taskbar button.active {
@@ -41,7 +43,7 @@ window#waybar.hidden {
 #custom-file_manager,
 #custom-web_browser,
 #custom-calibri {
-  font-size: 24px;
+  font-size: 20px;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -50,31 +52,60 @@ window#waybar.hidden {
 #memory,
 #disk,
 #battery,
-#clock,
 #pulseaudio,
 #idle_inhibitor {
-  padding: 5px;
+  padding: 2px;
+}
+
+#clock{
+  padding-right: 10px;
+  padding-left: 10px;
+  background: @blue;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 15px;
+
+}
+
+ #clock,
+ #battery,
+ #pulseaudio {
+   color: @bg_main;
+  font-weight: 500;
 }
 
 #tray {
   margin-left: 10px;
   margin-right: 10px;
 }
+
+#battery.full {
+  background: @green;
+  color: @bg_main;
+  font-weight: 500;
+}
+
+
 #battery.critical {
   background: @red;
-  color: #1d1f21;
+  color: @bg_main;
 }
 
 #battery.thirty {
   background: @orange;
-  color: #1d1f21;
+  color: @bg_main;
 }
 
 #battery.half {
   background: @yellow;
-  color: #1d1f21;
+  color: @bg_main;
 }
 
 #pulseaudio.bluetooth{
   padding: 10px;
+}
+
+#pulseaudio{
+  background: @yellow;
+  color: @bg_main;
+  font-weight: 500;
 }

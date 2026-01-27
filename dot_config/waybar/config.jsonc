@@ -2,30 +2,30 @@
   "layer": "bottom",
   "position": "top",
   "height": 36,
-  "spacing": 4,
+  "spacing": 0,
   // "width": 100,
   "expand-left": true,
   "modules-left": [
     "custom/os_button",
     "custom/file_manager",
     "custom/web_browser",
-    // "custom/calibri",
     "wlr/taskbar"
+    // "custom/calibri",
   ],
   "modules-center": [],
   "modules-right": [
     "tray",
     // "cpu",
     // "memory",
-    "disk",
+    // "disk",
     "battery",
     "pulseaudio",
     "clock"
     // "idle_inhibitor"
   ],
   "tray": {
-    "icon-size": 20,
-    "spacing": 10
+    "icon-size": 18,
+    "spacing": 5
   },
 
   "cpu": {
@@ -43,6 +43,7 @@
   },
   "battery": {
     "states": {
+      "full": 100,
       "half": 50,
       "thirty": 30,
       "critical": 15
@@ -50,9 +51,9 @@
     "interval": 60,
     "format": "{capacity}% {icon}",
     "format-full": "{capacity}% {icon}",
-    "format-charging": "{capacity}% 󰢝",
-    "format-plugged": "{capacity}% 󰂅",
-    "format-alt": "{time} {icon}",
+    "format-charging": " {capacity}%  󰢝 ",
+    "format-plugged": " {capacity}%  󰂅 ",
+    "format-alt": " {time} {icon} ",
     "format-icons": ["󰁺", "󰁻", "󰁾", "󰂀", "󰂂", "󰁹"]
   },
   "clock": {
@@ -65,12 +66,11 @@
   },
   "pulseaudio": {
     // "scroll-step": 1, // %, can be a float
-    "format": "{volume}% {icon} {format_source}",
+    "format": " {volume}%  {icon} ",
+    // "format": "<span font='16px'> {volume}%  {icon}  </span>",
     "format-bluetooth": "{volume}% {icon}",
     "format-bluetooth-muted": "󰝟 {icon}",
-    "format-muted": "󰝟",
-    "format-source": "{volume}% ",
-    "format-source-muted": "",
+    "format-muted": " 󰝟 ",
     "format-icons": {
       "headphone": "",
       "hands-free": "󰓃",
@@ -78,7 +78,7 @@
       "phone": "",
       "portable": "",
       "car": "",
-      "default": ["", "", ""]
+      "default": ["","",""]
     },
     "on-click": "pavucontrol"
   },
@@ -90,9 +90,9 @@
     }
   },
   "wlr/taskbar": {
-    "format": "{icon} {title:.15}",
-    "icon-size": 24,
-    "spacing": 3,
+    "format": "{icon} {title:.12}",
+    "icon-size": 20,
+    "spacing": 0,
     "on-click-middle": "close",
     "on-click": "minimize-raise",
     "tooltip-format": "{title}",
