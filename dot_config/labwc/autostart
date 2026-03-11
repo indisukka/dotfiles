@@ -6,10 +6,13 @@
 waybar >/dev/null 2>&1 &
 
 # Network Manager
-(sleep 5; nm-applet) &
+(sleep 3; nm-applet) &
 
 # Notification
 mako >/dev/null 2>&1 &
+
+# Kanshi
+kanshi >/dev/null 2>&1 &
 
 # Power Manager
 slimbookbattery --minimize >/dev/null 2>&1 &
@@ -17,18 +20,15 @@ slimbookbattery --minimize >/dev/null 2>&1 &
 # Clipboard
 copyq >/dev/null 2>&1 &
 
-# Bluetooth
-(blueman-applet) &
-
-# Flameshot
-(sleep 15; flameshot) &
-
-# Megasync
-(sleep 20; megasync) &
-
-# Kanshi
-kanshi >/dev/null 2>&1 &
-
 # Wallpaper
 #wpaperd >/dev/null 2>&1 &
 /home/gin/.bin/wayland_set_wallpaper.sh
+
+# Bluetooth
+(sleep 5; blueman-applet) &
+
+# Flameshot
+(sleep 5; flameshot) &
+
+# Megasync
+(sleep 5; [megasync]) &
