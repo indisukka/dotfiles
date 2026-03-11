@@ -106,7 +106,7 @@
   "custom/file_manager": {
     "tooltip-format": "File Manager",
     "format": "󰝰",
-    "on-click": "nemo"
+    "on-click": "thunar"
   }
   ,
   "custom/web_browser": {
