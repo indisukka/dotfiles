@@ -182,7 +182,7 @@
       <action name="Execute" command="/usr/bin/discord --enable-features=UseOzonePlatform --ozone-platform=wayland"/>
     </keybind>
     <keybind key="W-f">
-      <action name="Execute" command="pcmanfm"/>
+      <action name="Execute" command="thunar"/>
     </keybind>
     <keybind key="W-t">
       <action name="Execute" command="subl"/>
@@ -277,6 +277,9 @@
     <windowRule identifier="nwg-look" serverDecoration="yes"/>
     <!-- App specific rules -->
     <windowRule identifier="firefox">
+      <action name="Maximize"/>
+    </windowRule>
+    <windowRule identifier="zen-browser">
       <action name="Maximize"/>
     </windowRule>
     <windowRule identifier="kitty">
