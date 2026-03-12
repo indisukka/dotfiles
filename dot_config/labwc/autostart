@@ -28,7 +28,7 @@ copyq >/dev/null 2>&1 &
 (sleep 5; flameshot) &
 
 # Megasync
-(sleep 5; [megasync]) &
+(sleep 5; megasync) &
 
 # Bluetooth
 (sleep 5; blueman-applet)
