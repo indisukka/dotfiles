@@ -22,13 +22,13 @@ copyq >/dev/null 2>&1 &
 
 # Wallpaper
 #wpaperd >/dev/null 2>&1 &
-/home/gin/.bin/wayland_set_wallpaper.sh
-
-# Bluetooth
-(sleep 5; blueman-applet) &
+/home/gin/.bin/wayland_set_wallpaper.sh &
 
 # Flameshot
 (sleep 5; flameshot) &
 
 # Megasync
 (sleep 5; [megasync]) &
+
+# Bluetooth
+(sleep 5; blueman-applet)
