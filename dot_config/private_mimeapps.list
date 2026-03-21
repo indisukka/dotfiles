@@ -39,11 +39,11 @@ application/x-compressed-tar=xarchiver.desktop;peazip.desktop;org.gnome.FileRoll
 application/x-shellscript=code-oss.desktop;codium-wayland.desktop;sublime_text.desktop;
 image/webp=feh.desktop;
 x-scheme-handler/tonsite=org.telegram.desktop.desktop;
-application/epub+zip=com.github.johnfactotum.Foliate.desktop;com.calibre_ebook.calibre.desktop;peazip.desktop;xarchiver.desktop;
+application/epub+zip=com.calibre_ebook.calibre.ebook-viewer.desktop;com.github.johnfactotum.Foliate.desktop;com.calibre_ebook.calibre.desktop;peazip.desktop;xarchiver.desktop;
 application/x-zerosize=feh.desktop;sublime_text.desktop;
 application/x-apple-diskimage=peazip.desktop;
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop;org.onlyoffice.desktopeditors.desktop;
-text/markdown=code-oss.desktop;codium-wayland.desktop;
+text/markdown=sublime_text.desktop;code-oss.desktop;codium-wayland.desktop;code.desktop;
 application/x-7z-compressed=xarchiver.desktop;peazip.desktop;
 application/x-java=codium-wayland.desktop;
 video/webm=mpv.desktop;vivaldi-stable.desktop;vlc.desktop;firefox.desktop;mediainfo-gui.desktop;
@@ -67,6 +67,7 @@ audio/x-mpegurl=org.kde.haruna.desktop;com.sayonara-player.Sayonara.desktop;mpv.
 audio/vnd.wave=mpv.desktop;mediainfo-gui.desktop;
 application/octet-stream=sublime_text.desktop;
 image/x-adobe-dng=feh.desktop;
+application/x-bittorrent=org.qbittorrent.qBittorrent.desktop;
 
 [Default Applications]
 font/otf=org.gnome.FontViewer.desktop
@@ -107,6 +108,7 @@ application/x-7z-compressed=xarchiver.desktop
 application/x-zstd-compressed-tar=org.gnome.FileRoller.desktop
 text/vnd.trolltech.linguist=mpv.desktop
 application/octet-stream=sublime_text.desktop
+text/markdown=code.desktop
 
 [Removed Associations]
 application/pdf=com.calibre_ebook.calibre.desktop;
