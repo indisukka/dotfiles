@@ -2,7 +2,7 @@
 -o '$HOME/Videos/%(playlist_title)s/%(playlist_index)s_%(title)s_%(channel)s.%(ext)s'
 
 # Download best format available but less than 1440p and best audio available
--f 'bv*[height<1440]+ba/b'
+-f 'bv*[height<=1080]+ba/b'
 
 # Remux the video into another container if necessary (currently supported: mp4|mkv|flv|webm|mov|avi|mp3|mka|m4a|ogg|opus)
 --remux-video "mkv"

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <labwc_config>
   <theme>
-    <name>Pelangi</name>
+    <name>Sephia</name>
     <cornerRadius>10</cornerRadius>
     <font name="Inter Variable" size="11"/>
     <titleLayout>CLIM</titleLayout>

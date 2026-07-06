@@ -3,13 +3,17 @@
 
 # Bar
 # sfwbar >/dev/null 2>&1 &
-waybar >/dev/null 2>&1 &
+# waybar >/dev/null 2>&1 &
+xfce4-panel >/dev/null 2>&1 &
 
 # Network Manager
 (sleep 3; nm-applet) &
 
 # Notification
 mako >/dev/null 2>&1 &
+
+# Bluetooth
+(sleep 5; blueman-applet)
 
 # Kanshi
 kanshi >/dev/null 2>&1 &
@@ -29,6 +33,3 @@ copyq >/dev/null 2>&1 &
 
 # Megasync
 (sleep 5; megasync) &
-
-# Bluetooth
-(sleep 5; blueman-applet)
