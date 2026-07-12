@@ -1,0 +1,47 @@
+{
+    "telemetry.telemetryLevel": "crash",
+    "workbench.colorTheme": "Base16 Tomorrow",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.fontFamily": "'monolisa',monospace,'FontAwesome', 'symbols nerd font mono'",
+    "editor.fontSize": 12,
+    "editor.fontLigatures": true,
+    "editor.lineHeight": 1.8,
+    "editor.fontWeight": "400",
+    "editor.mouseWheelZoom": true,
+    "editor.minimap.enabled": false,
+    "terminal.integrated.cursorStyle": "underline",
+    "terminal.integrated.fontFamily": "'JetBrains Mono', monospace,'symbols nerd font mono'",
+    "terminal.integrated.fontSize": 11,
+    "terminal.integrated.fontWeight": "normal",
+    // "terminal.integrated.lineHeight": 1.0,
+    "terminal.integrated.defaultProfile.linux": "fish",
+    "window.zoomLevel": 1.0,
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[shellscript]": {
+        "editor.defaultFormatter": "mkhl.shfmt"
+    },
+    "terminal.integrated.profiles.linux": {
+        "fish": {
+            "path": "fish"
+        },
+        "bash": {
+            "path": "bash",
+            "icon": "terminal-bash"
+        }
+    },
+    "[javascript]": {
+        // "editor.defaultFormatter": "vscode.typescript-language-features"
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "github.copilot.nextEditSuggestions.enabled": false,
+    "github.copilot.nextEditSuggestions.eagerness": "low",
+    "markdown.extension.tableFormatter.enabled": false
+}

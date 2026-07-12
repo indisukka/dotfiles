@@ -1,35 +1,14 @@
-# polkit agent
-/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-
-# Bar
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & 	# polkit agent
 # sfwbar >/dev/null 2>&1 &
 # waybar >/dev/null 2>&1 &
 xfce4-panel >/dev/null 2>&1 &
-
-# Network Manager
-(sleep 3; nm-applet) &
-
-# Notification
-mako >/dev/null 2>&1 &
-
-# Bluetooth
-(sleep 5; blueman-applet)
-
-# Kanshi
-kanshi >/dev/null 2>&1 &
-
-# Power Manager
+nm-applet & 													# Network Manager
+mako >/dev/null 2>&1 & 											# Notification
+blueman-applet &												# Network manager applet
+kanshi >/dev/null 2>&1 & 										# Display configuration daemon
 slimbookbattery --minimize >/dev/null 2>&1 &
-
-# Clipboard
-copyq >/dev/null 2>&1 &
-
-# Wallpaper
-#wpaperd >/dev/null 2>&1 &
+copyq >/dev/null 2>&1 &											# Clipboard manager
+#wpaperd >/dev/null 2>&1 & 										# Wallpaper daemon
 /home/gin/.bin/wayland_set_wallpaper.sh &
-
-# Flameshot
-(sleep 5; flameshot) &
-
-# Megasync
-(sleep 5; megasync) &
+flameshot &
+megasync &
