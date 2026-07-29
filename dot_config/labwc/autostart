@@ -10,5 +10,5 @@ slimbookbattery --minimize >/dev/null 2>&1 &
 copyq >/dev/null 2>&1 &											# Clipboard manager
 #wpaperd >/dev/null 2>&1 & 										# Wallpaper daemon
 /home/gin/.bin/wayland_set_wallpaper.sh &
-flameshot &
-megasync &
+(sleep 2 && flameshot) &
+(sleep 3 && QT_QPA_PLATFORM=xcb megasync) &						# add delay due to not starting on login

@@ -2,23 +2,24 @@
     "base16.generator.activatedThemes": [
         "base16-default-dark",
         "base16-solar-flare-dark",
-        "base16-tomorrow-night-dark"
+        "base16-tokyo-night-terminal-dark",
+        "base16-tomorrow-night-dark",
+        "base16-windows-10-dark"
     ],
-    "workbench.colorTheme": "Base16 Tomorrow Night Dark",
     "workbench.iconTheme": "material-icon-theme",
-    "editor.fontFamily": "'fira code retina','m plus code latin','offlig',monospace,'FontAwesome', 'symbols nerd font mono'",
-    "editor.fontSize": 13,
+    "editor.fontFamily": "'monolisa','m plus code latin','offlig',monospace,'FontAwesome', 'symbols nerd font mono'",
+    "editor.fontSize": 14,
     "editor.fontLigatures": true,
-    "editor.lineHeight": 1.7,
+    "editor.lineHeight": 1.6,
     "editor.fontWeight": "400",
     "editor.mouseWheelZoom": true,
-    "terminal.integrated.cursorStyle": "underline",
-    "terminal.integrated.fontFamily": "'ubuntu sans mono', monospace,'symbols nerd font mono'",
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.fontFamily": "monospace,'symbols nerd font mono'",
     "terminal.integrated.fontSize": 13,
     "terminal.integrated.fontWeight": "normal",
     "terminal.integrated.lineHeight": 1.5,
     "terminal.integrated.defaultProfile.linux": "fish",
-    "terminal.external.linuxExec": "alacritty",
+    "terminal.external.linuxExec": "kitty",
     "window.zoomLevel": 1.0,
     "editor.minimap.enabled": false,
     "[xml]": {
@@ -63,5 +64,7 @@
         "spring-boot-properties",
         "azcli",
         "bats"
-    ]
+    ],
+    "workbench.colorTheme": "Base16 Tomorrow Night Dark",
+    "workbench.productIconTheme": "material-product-icons"
 }

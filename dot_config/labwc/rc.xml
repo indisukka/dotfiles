@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <labwc_config>
   <theme>
-    <name>Numix-Clone</name>
+    <name>Triste-Violet</name>
     <cornerRadius>10</cornerRadius>
     <font name="Bricolage Grotesque" size="12"/>
     <titleLayout>CLIM</titleLayout>
