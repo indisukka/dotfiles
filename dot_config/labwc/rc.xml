@@ -3,16 +3,16 @@
   <theme>
     <name>Triste-Violet</name>
     <cornerRadius>10</cornerRadius>
-    <font name="Bricolage Grotesque" size="12"/>
+    <font name="Bricolage Grotesque" size="12" />
     <titleLayout>CLIM</titleLayout>
     <icon>Papirus-Dark</icon>
   </theme>
   <windowSwitcher show="yes" preview="no" outlines="yes" allWorkspaces="yes">
     <fields>
-    <field content="workspace" width="10%" />
-    <field content="icon" width="10%" />
-    <field content="identifier" width="20%" />
-    <field content="title" width="60%" />
+      <field content="workspace" width="10%" />
+      <field content="icon" width="10%" />
+      <field content="identifier" width="20%" />
+      <field content="title" width="60%" />
     </fields>
   </windowSwitcher>
 
@@ -39,7 +39,7 @@
   <keyboard>
     <!-- Window manager controls -->
     <keybind key="W-Space">
-      <action name="ShowMenu" menu="root-menu"/>
+      <action name="ShowMenu" menu="root-menu" />
     </keybind>
     <keybind key="A-Space">
       <action name="ShowMenu" menu="client-menu" />
@@ -47,29 +47,26 @@
     <keybind key="W-S-r">
       <action name="Execute" command="labwc --reconfigure" />
     </keybind>
-    <keybind key="W-S-x">
-      <action name="Execute" command="labwc --exit" />
-    </keybind>
     <keybind key="W-q">
-      <action name="Close"/>
+      <action name="Close" />
     </keybind>
     <keybind key="A-Tab">
-      <action name="NextWindow"/>
+      <action name="NextWindow" />
     </keybind>
     <keybind key="A-S-Tab">
-      <action name="PreviousWindow"/>
+      <action name="PreviousWindow" />
     </keybind>
     <keybind key="A-t">
-      <action name="ToggleAlwaysOnTop"/>
+      <action name="ToggleAlwaysOnTop" />
     </keybind>
     <keybind key="A-m">
-      <action name="ToggleMaximize"/>
+      <action name="ToggleMaximize" />
     </keybind>
-    <!-- <keybind key="A-d">
-      <action name="ToggleShowDesktop"/>
-    </keybind> -->
+    <keybind key="A-d">
+      <action name="ToggleShowDesktop" />
+    </keybind>
     <keybind key="A-b">
-      <action name="ToggleDecorations"/>
+      <action name="ToggleDecorations" />
     </keybind>
     <keybind key="W-Left">
       <action name="SnapToEdge" direction="left" />
@@ -84,43 +81,50 @@
       <action name="SnapToEdge" direction="down" />
     </keybind>
 
+    <!-- SnapToRegion -->
+    <keybind key="W-A-Up">
+      <action name="SnapToRegion" region="top-right" />
+    </keybind>
+    <keybind key="W-A-Down">
+      <action name="SnapToRegion" region="bottom-right" />
+    </keybind>
     <!-- SnapToRegion via W-Numpad -->
-    <keybind key="W-KP_7">
-      <action name="UnmaximizeFull"/>
+    <!-- <keybind key="W-KP_7">
+      <action name="ToggleMaximize"/>
       <action name="SnapToRegion" region="top-left" />
     </keybind>
     <keybind key="W-KP_8">
-      <action name="UnmaximizeFull"/>
+      <action name="ToggleMaximize"/>
       <action name="SnapToRegion" region="top" />
     </keybind>
     <keybind key="W-KP_9">
-      <action name="UnmaximizeFull"/>
+      <action name="ToggleMaximize"/>
       <action name="SnapToRegion" region="top-right" />
     </keybind>
     <keybind key="W-KP_4">
-      <action name="UnmaximizeFull"/>
+      <action name="ToggleMaximize"/>
       <action name="SnapToRegion" region="left" />
     </keybind>
     <keybind key="W-KP_5">
-      <action name="UnmaximizeFull"/>
+      <action name="ToggleMaximize"/>
       <action name="SnapToRegion" region="center" />
     </keybind>
     <keybind key="W-KP_6">
-      <action name="UnmaximizeFull"/>
+      <action name="ToggleMaximize"/>
       <action name="SnapToRegion" region="right" />
     </keybind>
     <keybind key="W-KP_1">
-      <action name="UnmaximizeFull"/>
+      <action name="ToggleMaximize"/>
       <action name="SnapToRegion" region="bottom-left" />
     </keybind>
     <keybind key="W-KP_2">
-      <action name="UnmaximizeFull"/>
+      <action name="ToggleMaximize"/>
       <action name="SnapToRegion" region="bottom" />
     </keybind>
     <keybind key="W-KP_3">
-      <action name="UnmaximizeFull"/>
+      <action name="ToggleMaximize"/>
       <action name="SnapToRegion" region="bottom-right" />
-    </keybind>
+    </keybind> -->
 
     <!-- Workspace -->
     <keybind key="W-Prior">
@@ -138,10 +142,10 @@
 
     <!-- Fn Keys -->
     <keybind key="XF86_MonBrightnessUp">
-      <action name="Execute" command="brightnessctl set +5%"/>
+      <action name="Execute" command="brightnessctl set +5%" />
     </keybind>
     <keybind key="XF86_MonBrightnessDown">
-      <action name="Execute" command="brightnessctl set 5%-"/>
+      <action name="Execute" command="brightnessctl set 5%-" />
     </keybind>
     <keybind key="XF86_AudioLowerVolume">
       <action name="Execute" command="amixer sset Master 5%-" />
@@ -170,52 +174,52 @@
     </keybind>
     <!-- Applications -->
     <keybind key="W-Return">
-      <action name="Execute" command="kitty -e fish"/>
+      <action name="Execute" command="kitty -e fish" />
     </keybind>
     <keybind key="W-b">
-      <action name="Execute" command="firefox"/>
+      <action name="Execute" command="firefox" />
     </keybind>
     <keybind key="W-s">
-      <action name="Execute" command="spotify --enable-features=UseOzonePlatform --ozone-platform=wayland"/>
+      <action name="Execute" command="spotify --enable-features=UseOzonePlatform --ozone-platform=wayland" />
     </keybind>
     <keybind key="W-d">
-      <action name="Execute" command="/usr/bin/discord --enable-features=UseOzonePlatform --ozone-platform=wayland"/>
+      <action name="Execute" command="/usr/bin/discord --enable-features=UseOzonePlatform --ozone-platform=wayland" />
     </keybind>
     <keybind key="W-f">
-      <action name="Execute" command="thunar"/>
+      <action name="Execute" command="thunar" />
     </keybind>
     <keybind key="W-t">
-      <action name="Execute" command="subl"/>
+      <action name="Execute" command="subl" />
     </keybind>
     <keybind key="W-p">
-      <action name="Execute" command="rofi -show combi -sidebar-mode"/>
+      <action name="Execute" command="rofi -show combi -sidebar-mode" />
     </keybind>
     <keybind key="W-x">
-      <action name="Execute" command="wlogout"/>
+      <action name="Execute" command="wlogout" />
     </keybind>
     <keybind key="W-v">
-      <action name="Execute" command="copyq toggle"/>
+      <action name="Execute" command="copyq toggle" />
     </keybind>
     <keybind key="Print">
-      <action name="Execute" command="flameshot full"/>
+      <action name="Execute" command="flameshot full" />
     </keybind>
     <keybind key="W-Print">
-      <action name="Execute" command="flameshot gui"/>
+      <action name="Execute" command="flameshot gui" />
     </keybind>
     <keybind key="W-S-b">
-      <action name="Execute" command="zen-browser"/>
+      <action name="Execute" command="zen-browser" />
     </keybind>
     <keybind key="W-S-v">
-      <action name="Execute" command="vivaldi"/>
+      <action name="Execute" command="vivaldi" />
     </keybind>
     <keybind key="W-S-f">
-      <action name="Execute" command="kitty -e ranger"/>
+      <action name="Execute" command="kitty -e ranger" />
     </keybind>
     <keybind key="W-S-d">
-      <action name="Execute" command="wdisplays"/>
+      <action name="Execute" command="wdisplays" />
     </keybind>
     <keybind key="W-S-t">
-      <action name="Execute" command="telegram-desktop"/>
+      <action name="Execute" command="telegram-desktop" />
     </keybind>
     <!-- Scripts -->
     <keybind key="A-w">
@@ -229,17 +233,17 @@
       </action>
     </keybind>
     <keybind key="C-Print">
-      <action name="Execute" command="/home/gin/.bin/wayland-screenshot-area.sh"/>
+      <action name="Execute" command="/home/gin/.bin/wayland-screenshot-area.sh" />
     </keybind>
     <keybind key="A-n">
-      <action name="Execute" command="/home/gin/.bin/toggle-sfwbar.sh"/>
+      <action name="Execute" command="/home/gin/.bin/toggle-sfwbar.sh" />
     </keybind>
     <keybind key="A-Print">
-      <action name="Execute" command="/home/gin/.bin/screenrecord.sh"/>
+      <action name="Execute" command="/home/gin/.bin/screenrecord.sh" />
     </keybind>
-    </keyboard>
-<!-- Mouse Related -->
-    <mouse>
+  </keyboard>
+  <!-- Mouse Related -->
+  <mouse>
     <!-- loads defaults -->
     <default />
     <!-- overriding the defaults here -->
@@ -271,35 +275,35 @@
 
   <!-- Window Rules -->
   <windowRules>
-        <!-- No server decoration for any apps (top bar) -->
-    <windowRule identifier="*" serverDecoration="no"/>
+    <!-- No server decoration for any apps (top bar) -->
+    <windowRule identifier="*" serverDecoration="no" />
     <!-- Overrides for the window decoration rule -->
-    <windowRule identifier="nwg-look" serverDecoration="yes"/>
+    <windowRule identifier="nwg-look" serverDecoration="yes" />
     <!-- App specific rules -->
     <windowRule identifier="firefox">
-      <action name="Maximize"/>
+      <action name="Maximize" />
     </windowRule>
     <windowRule identifier="zen-browser">
-      <action name="Maximize"/>
+      <action name="Maximize" />
     </windowRule>
     <windowRule identifier="kitty">
-      <action name="Maximize"/>
+      <action name="Maximize" />
     </windowRule>
     <windowRule identifier="sublime_text">
-      <action name="Maximize"/>
+      <action name="Maximize" />
     </windowRule>
     <windowRule identifier="mpv">
       <!-- <action name="SnapToRegion" region="bottom-right"/> -->
       <action name="ResizeTo" width="480" height="320" />
-      <action name="ToggleAlwaysOnTop"/>
+      <action name="ToggleAlwaysOnTop" />
     </windowRule>
     <windowRule identifier="gsimplecal">
-      <action name="SnapToRegion" region="top-right"/>
-      <action name="ToggleAlwaysOnTop"/>
+      <action name="SnapToRegion" region="top-right" />
+      <action name="ToggleAlwaysOnTop" />
     </windowRule>
     <windowRule title="Picture-in-Picture*">
-      <action name="ToggleAlwaysOnTop"/>
-      <action name="SnapToRegion" region="bottom-right"/>
+      <action name="ToggleAlwaysOnTop" />
+      <action name="SnapToRegion" region="bottom-right" />
       <action name="MoveTo" x="100%" y="100%" />
       <action name="ResizeTo" width="480" height="320" />
     </windowRule>
