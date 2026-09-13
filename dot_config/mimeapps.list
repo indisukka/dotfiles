@@ -114,6 +114,9 @@ text/vnd.trolltech.linguist=mpv.desktop
 application/octet-stream=sublime_text.desktop
 text/markdown=code.desktop
 image/avif=feh.desktop
+x-scheme-handler/readest=readest-handler.desktop
+x-scheme-handler/readest-onedrive=readest-handler.desktop
+x-scheme-handler/com.googleusercontent.apps.209390247301-ctpmep68ppfa56r1b8tr35e4qi4p60kq=readest-handler.desktop
 
 [Removed Associations]
 application/pdf=com.calibre_ebook.calibre.desktop;
